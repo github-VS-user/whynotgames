@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhyNotGames | Leveling Up</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* All your styling goes here */
+        :root { --bg: #0a0a0a; --card-bg: #1a1a1a; --accent: #007bff; --text: #ffffff; }
+        body { margin: 0; font-family: sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; }
+        nav { display: flex; justify-content: space-between; padding: 2rem 5%; align-items: center; }
+        .logo { font-weight: 900; font-size: 1.5rem; }
+        .logo span { color: var(--accent); }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 600; opacity: 0.8; }
+        .hero { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 10%; }
+        h1 { font-size: 3rem; margin-bottom: 10px; }
+        .btn { background: var(--accent); color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
+        .section { padding: 80px 10%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); padding: 40px; border-radius: 10px; border: 1px solid #333; }
+        footer { text-align: center; padding: 40px; border-top: 1px solid #222; }
+        .admin-link { text-decoration: none; color: #111; font-size: 12px; }
+    </style>
 </head>
 <body>
     <nav>
         <div class="logo">WHYNOT<span>GAMES</span></div>
         <ul>
             <li><a href="#games">Games</a></li>
-            <li><a href="#team">The 7</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -38,7 +54,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 WhyNotGames. All rights reserved.</p>
+        <p>&copy; 2026 WhyNotGames.</p>
         <a href="admin.html" class="admin-link">.</a>
     </footer>
 </body>

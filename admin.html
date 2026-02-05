@@ -1,0 +1,80 @@
+:root {
+    --bg: #0a0a0a;
+    --card-bg: #1a1a1a;
+    --accent: #007bff;
+    --text: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    align-items: center;
+}
+
+.logo { font-weight: 900; font-size: 1.5rem; letter-spacing: -1px; }
+.logo span { color: var(--accent); }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-weight: 600; opacity: 0.8; }
+nav ul li a:hover { opacity: 1; color: var(--accent); }
+
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+h1 { font-size: 4rem; margin-bottom: 10px; }
+
+.btn {
+    background: var(--accent);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.section { padding: 80px 10%; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #222;
+}
+
+/* The discreet link - looks like a tiny dot */
+.admin-link {
+    text-decoration: none;
+    color: #222;
+    font-size: 10px;
+    cursor: default;
+}
